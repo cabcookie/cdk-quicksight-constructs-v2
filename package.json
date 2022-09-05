@@ -1,8 +1,9 @@
 {
   "name": "cdk-quicksight-constructs-v2",
+  "description": "Constructs to create and manage resources in QuickSight",
   "repository": {
     "type": "git",
-    "url": "https://github.com/carsten.b.koch/cdk-quicksight-constructs-v2.git"
+    "url": "https://github.com/cabcookie/cdk-quicksight-constructs-v2.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -39,7 +40,7 @@
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.40.0",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -59,14 +60,20 @@
     "typescript": "^4.8.2"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.40.0",
     "constructs": "^10.0.5"
   },
+  "dependencies": {
+    "cdk-iam-floyd": "0.391.0"
+  },
   "keywords": [
-    "cdk"
+    "aws-cdk",
+    "aws-quicksight",
+    "cdk",
+    "quicksight"
   ],
   "main": "lib/index.js",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "version": "0.0.0",
   "jest": {
     "testMatch": [

@@ -6,10 +6,21 @@ const project = new awscdk.AwsCdkConstructLibrary({
   defaultReleaseBranch: 'main',
   name: 'cdk-quicksight-constructs-v2',
   repositoryUrl: 'https://github.com/cabcookie/cdk-quicksight-constructs-v2.git',
+  description: 'Constructs to create and manage resources in QuickSight',
+  keywords: [
+    'aws-cdk',
+    'aws-quicksight',
+    'quicksight',
+  ],
+  license: 'MIT',
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
+  // Runtime dependencies of this module.
+  deps: [
+    'cdk-iam-floyd@0.391.0',
+  ],
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
+
+  publishDryRun: true,
 });
 project.synth();
