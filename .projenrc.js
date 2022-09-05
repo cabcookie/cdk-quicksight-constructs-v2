@@ -23,4 +23,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   publishDryRun: true,
 });
+
+// Fixing problem with version 3.0.0 of @types/responselike
+project.package.addField('resolutions', {
+  'got': '12.3.1',
+  '@types/responselike': '1.0.0',
+});
+
 project.synth();
