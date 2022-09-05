@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "type": "node",
+    "request": "launch",
+    "name": "Debug CDK Construct",
+    "skipFiles": [
+      "<node_internals>/**"
+    ],
+    "runtimeArgs": [
+      "-r", "./node_modules/ts-node/register/transpile-only"
+    ],
+    "args": [
+      "${workspaceFolder}/wrapper/cdk-app.ts"
+    ]
+  }]
+}

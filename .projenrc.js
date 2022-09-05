@@ -23,6 +23,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   deps: [
     'cdk-iam-floyd@0.391.0',
   ],
+  devDeps: [
+    'ts-node@^10.9.1',
+  ],
 
   publishDryRun: true,
 });
@@ -32,5 +35,9 @@ project.package.addField('resolutions', {
   'got': '12.3.1',
   '@types/responselike': '1.0.0',
 });
+
+project.eslint.addIgnorePattern('wrapper/');
+project.addGitIgnore('cdk.out/');
+project.setScript('cdk', 'cdk');
 
 project.synth();

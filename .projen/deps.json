@@ -97,6 +97,11 @@
       "type": "build"
     },
     {
+      "name": "ts-node",
+      "version": "^10.9.1",
+      "type": "build"
+    },
+    {
       "name": "typescript",
       "type": "build"
     },
