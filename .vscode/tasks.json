@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CDK Diff",
+      "type": "shell",
+      "command": "cdk --app 'npx ts-node wrapper/cdk-app.ts' diff --profile DEV",
+      "problemMatcher": []
+    },
+    {
+      "label": "CDK Synth",
+      "type": "shell",
+      "command": "cdk --app 'npx ts-node wrapper/cdk-app.ts' synth --profile DEV",
+      "problemMatcher": []
+    },
+    {
+      "label": "CDK Deploy",
+      "type": "shell",
+      "command": "cdk --app 'npx ts-node wrapper/cdk-app.ts' deploy --profile DEV",
+      "problemMatcher": []
+    }
+  ]
+}
