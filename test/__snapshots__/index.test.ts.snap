@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Construct Snapshot 1`] = `
+Object {
+  "MyQSTestQSCTestBucket118BB3F7": Object {
+    "DeletionPolicy": "Delete",
+    "Type": "AWS::S3::Bucket",
+    "UpdateReplacePolicy": "Delete",
+  },
+}
+`;
