@@ -1,12 +1,17 @@
 const { awscdk } = require('projen');
+const { ReleaseTrigger } = require('projen/lib/release');
 const project = new awscdk.AwsCdkConstructLibrary({
-  author: 'Carsten Koch',
-  authorAddress: 'carsten.b.koch@gmail.com',
-  cdkVersion: '2.40.0',
-  defaultReleaseBranch: 'main',
   name: 'cdk-quicksight-constructs-v2',
-  repositoryUrl: 'https://github.com/cabcookie/cdk-quicksight-constructs-v2.git',
   description: 'Constructs to create and manage resources in QuickSight',
+  author: 'Carsten Koch',
+  authorOrganization: false,
+  authorAddress: 'carsten.b.koch@gmail.com',
+  entrypoint: 'lib/index.js',
+  repositoryUrl: 'https://github.com/cabcookie/cdk-quicksight-constructs-v2.git',
+
+  jsiiFqn: 'projen.AwsCdkConstructLibrary',
+  defaultReleaseBranch: 'main',
+  releaseTrigger: ReleaseTrigger.manual(),
   keywords: [
     'aws-cdk',
     'aws-quicksight',
@@ -14,12 +19,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   ],
   license: 'MIT',
 
-  // Runtime dependencies of this module.
+  cdkVersion: '2.40.0',
   deps: [
     'cdk-iam-floyd@0.391.0',
   ],
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
 
   publishDryRun: true,
 });
