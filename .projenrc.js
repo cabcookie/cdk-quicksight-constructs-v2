@@ -39,6 +39,5 @@ project.package.addField('resolutions', {
 
 project.eslint.addIgnorePattern('wrapper/');
 project.addGitIgnore('cdk.out/');
-project.setScript('cdk', 'cdk');
 
 project.synth();
