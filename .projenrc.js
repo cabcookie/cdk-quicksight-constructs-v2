@@ -25,6 +25,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   ],
   devDeps: [
     'ts-node@^10.9.1',
+    'cdk-dia@^0.7.0',
   ],
 
   publishDryRun: true,
