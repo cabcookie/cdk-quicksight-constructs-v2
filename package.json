@@ -2,7 +2,7 @@
   "name": "cdk-quicksight-constructs-v2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/carsten.b.koch/cdk-quicksight-constructs-v2.git"
+    "url": "https://github.com/cabcookie/cdk-quicksight-constructs-v2.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -22,7 +22,6 @@
     "pre-compile": "npx projen pre-compile",
     "release": "npx projen release",
     "test": "npx projen test",
-    "test:update": "npx projen test:update",
     "test:watch": "npx projen test:watch",
     "unbump": "npx projen unbump",
     "upgrade": "npx projen upgrade",
@@ -39,27 +38,27 @@
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.40.0",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
-    "eslint-import-resolver-typescript": "^3.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-import": "^2.26.0",
     "jest": "^27",
     "jest-junit": "^13",
-    "jsii": "^1.67.0",
-    "jsii-diff": "^1.67.0",
-    "jsii-docgen": "^7.0.76",
-    "jsii-pacmak": "^1.67.0",
+    "jsii": "^1.70.0",
+    "jsii-diff": "^1.70.0",
+    "jsii-docgen": "^7.0.137",
+    "jsii-pacmak": "^1.70.0",
     "json-schema": "^0.4.0",
-    "npm-check-updates": "^15",
-    "projen": "^0.61.42",
+    "npm-check-updates": "^16",
+    "projen": "^0.65.12",
     "standard-version": "^9",
     "ts-jest": "^27",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.4"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.40.0",
     "constructs": "^10.0.5"
   },
   "keywords": [
